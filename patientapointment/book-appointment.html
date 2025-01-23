@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Appointment</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="book-appointment.html">Book Appointment</a></li>
+                <li><a href="view-appointments.html">View Appointments</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="appointment-form">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <label for="doctorName">Doctor Name:</label>
+                <input type="text" id="doctorName" name="doctorName" required>
+                
+                <label for="specialization">Specialization:</label>
+                <select id="specialization" name="specialization" required>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Dermatology">Dermatology</option>
+                    <option value="Neurology">Neurology</option>
+                    <option value="Emergency_Medicine">Emergency Medicine</option>
+                </select>
+                
+                <label for="appointmentTime">Appointment Time:</label>
+                <input type="datetime-local" id="appointmentTime" name="appointmentTime" required>
+                
+                <button type="submit">Book Appointment</button>
+            </form>
+            <p id="appointmentResponse"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Patient Appointment System</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
